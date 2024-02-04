@@ -1,0 +1,24 @@
+{
+  "name": "awscypressdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "runner": "cypress open --e2e --browser chrome",
+    "allure:headless": "cypress run --browser chrome --env allure=true --reporter mocha-allure-reporter",
+    "clean:folders": "rimraf allure-report/* && rimraf allure-results/*",
+    "ui:test": "npm run clean:folders && npm run allure:headless",
+    "generate:allure": "allure generate allure-results && allure open allure-report"
+  },
+  "author": "Amira Elbahrawy",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.4"
+  },
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "allure-commandline": "^2.24.1",
+    "cypress-plugin-steps": "^1.1.1",
+    "mocha-allure-reporter": "^1.4.0"
+  }
+}

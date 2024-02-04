@@ -1,0 +1,5 @@
+{
+    "groupName":"#groupName",
+    "flightToggle":"#flight",
+    "saveButton":"[label='Save']"
+}

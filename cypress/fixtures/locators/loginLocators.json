@@ -1,0 +1,6 @@
+{
+    "username": "#username",
+    "password": "#password",
+    "loginButton": "[type='submit']",
+    "errorMsgLabel":".Text_root__M6tno"
+}
